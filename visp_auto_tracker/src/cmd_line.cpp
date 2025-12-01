@@ -411,8 +411,8 @@ CmdLine::CmdLine(std::string &config_file)
   : should_exit_(false), video_camera_(false), dmtxonly_(false), inner_ratio_(0.), outer_ratio_(0.), var_limit_(0.),
     mbt_dynamic_range_(0), var_file_(""), single_image_name_(""), log_file_pattern_(""), code_message_index_(0)
 {
-  this->config_file = config_file;
   common();
+  this->config_file = config_file;
   loadConfig(this->config_file);
 }
 
@@ -424,8 +424,8 @@ CmdLine::CmdLine()
 
 void CmdLine::init(std::string &config_file)
 {
-  this->config_file = config_file;
   common();
+  this->config_file = config_file;
   loadConfig(this->config_file);
 }
 

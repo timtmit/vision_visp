@@ -52,7 +52,7 @@ AutoTracker::AutoTracker()
   tracker_ref_frame_ = this->declare_parameter<std::string>("tracker_ref_frame", "/map");
   model_description_ = this->declare_parameter<std::string>("model_description", "");
   model_full_path = model_path_ + model_name_;
-  tracker_config_path_ = model_path_ + "/" + model_full_path + ".cfg";
+  tracker_config_path_ = model_full_path + ".cfg";
 
   // Parse command line arguments from config file (as ros param)
   cmd_.init(tracker_config_path_);
